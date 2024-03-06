@@ -1,0 +1,130 @@
+/*pagina general*/
+*{
+    background: #FEEFFF;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    overflow-y: hidden;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+main{
+    display: flex;
+    margin-bottom: 1px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+/*Casilla de la izquierda*/
+.textoUsuario{
+    border: none;
+    color: #942C71;
+    text-transform: lowercase;
+    height: 200px;
+}
+
+::placeholder{color: #942C71;font-size: 30px;}
+.textoUsuario:focus{
+    outline: none;
+}
+
+.informacion{
+    color: #495057;
+    font-size: 18px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.botones{
+    display: flex;
+    margin-top: 5px;
+}
+
+.botonEncriptar{
+    background: #942C71;
+    border: 1px solid #942C71;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.botonDesencriptar{
+    background: #E9E6E8;
+    border: 1px solid #942C71;
+    border-radius: 24px;
+    color: #942C71;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 30px;
+}
+
+/*Casilla de la derecha*/
+.mensaje{
+    background: white;
+    background-image: url(imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #942C71;
+    margin-top: 40px;
+    margin-left: 98px;
+    padding-left: 20px;
+    position:fixed;
+}
+.mensaje:focus{
+    outline: none;
+}
+.botonCopiar{
+    background: #E9E6E8;
+    border: 1px solid #942C71;
+    border-radius: 24px;
+    color: #942C71;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 130px;
+    margin-top: 450px;
+    width: 336px;
+    position: absolute;
+}
+
+@media screen and (max-width: 780px) {
+    main{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+   }
+   .textoUsuario{
+    border: none;
+    height: 100px
+    }
+    .mensaje{
+        background-position: center;
+        position: absolute;
+        margin-left: 1px;
+        margin-top: 10px;
+        margin-right: 1px;
+        padding-left: 2px;
+        height: 300px;
+        width: 336px;
+    }
+    .botonDesencriptar{
+        margin-left: 10px;
+    }
+    .botonCopiar{
+        height: 67px;
+        margin-left: 1px;
+        margin-top: 250px;
+        width: 336px;
+        position: absolute;
+    }
+}
